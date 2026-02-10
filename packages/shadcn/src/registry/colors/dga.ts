@@ -3,8 +3,8 @@
  * Used by the CLI to generate CSS variables for DGA theme
  */
 
-import type { registryBaseColorSchema } from "@/src/schema"
 import type { z } from "zod"
+import type { registryBaseColorSchema } from "@/src/schema"
 
 export const dgaBaseColor: z.infer<typeof registryBaseColorSchema> = {
   inlineColors: {
