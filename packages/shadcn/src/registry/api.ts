@@ -1,5 +1,6 @@
 import path from "path"
 import { buildUrlAndHeadersForRegistryItem } from "@/src/registry/builder"
+import { dgaBaseColor } from "@/src/registry/colors/dga"
 import { configWithDefaults } from "@/src/registry/config"
 import {
   BASE_COLORS,
@@ -197,6 +198,11 @@ export async function getRegistryBaseColors() {
 }
 
 export async function getRegistryBaseColor(baseColor: string) {
+  // Return DGA color locally instead of fetching from remote
+  if (baseColor === "dga") {
+    return dgaBaseColor
+  }
+
   try {
     const [result] = await fetchRegistry([`colors/${baseColor}.json`])
 
