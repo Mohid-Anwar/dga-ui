@@ -1,0 +1,164 @@
+/**
+ * DGA Theme
+ * Maps DGA design tokens to shadcn/ui semantic CSS variables
+ * Usage: Add class="theme-dga" to your root element or body
+ */
+
+.theme-dga .theme-container,
+.theme-dga [data-radix-popper-content-wrapper] {
+  /* Typography */
+  --font-sans: var(--dga-font-sans);
+  --font-mono: var(--dga-font-mono);
+
+  /* Border Radius */
+  --radius: var(--dga-radius-lg);
+
+  /* ============================================
+   * LIGHT MODE (default)
+   * ============================================ */
+
+  /* Backgrounds */
+  --background: var(--dga-gray-50);
+  --foreground: var(--dga-gray-900);
+
+  /* Card */
+  --card: oklch(1 0 0);
+  --card-foreground: var(--dga-gray-900);
+
+  /* Popover */
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--dga-gray-900);
+
+  /* Primary - Saudi Green */
+  --primary: var(--dga-primary-600);
+  --primary-foreground: var(--dga-primary-50);
+
+  /* Secondary - Gold */
+  --secondary: var(--dga-gold-100);
+  --secondary-foreground: var(--dga-gold-900);
+
+  /* Muted */
+  --muted: var(--dga-gray-100);
+  --muted-foreground: var(--dga-gray-600);
+
+  /* Accent - Lavender */
+  --accent: var(--dga-lavender-100);
+  --accent-foreground: var(--dga-lavender-900);
+
+  /* Destructive */
+  --destructive: var(--dga-error);
+  --destructive-foreground: var(--dga-error-light);
+
+  /* Borders & Inputs */
+  --border: var(--dga-gray-200);
+  --input: var(--dga-gray-200);
+  --ring: var(--dga-primary-400);
+
+  /* Charts - Green palette */
+  --chart-1: var(--dga-primary-300);
+  --chart-2: var(--dga-primary-400);
+  --chart-3: var(--dga-primary-500);
+  --chart-4: var(--dga-primary-600);
+  --chart-5: var(--dga-primary-700);
+
+  /* Sidebar */
+  --sidebar: var(--dga-gray-50);
+  --sidebar-foreground: var(--dga-gray-900);
+  --sidebar-primary: var(--dga-primary-600);
+  --sidebar-primary-foreground: var(--dga-primary-50);
+  --sidebar-accent: var(--dga-primary-100);
+  --sidebar-accent-foreground: var(--dga-primary-900);
+  --sidebar-border: var(--dga-gray-200);
+  --sidebar-ring: var(--dga-primary-400);
+
+  /* Surface */
+  --surface: var(--dga-gray-100);
+  --surface-foreground: var(--dga-gray-900);
+
+  /* Code */
+  --code: var(--dga-gray-100);
+  --code-foreground: var(--dga-gray-800);
+  --code-highlight: var(--dga-primary-100);
+  --code-number: var(--dga-gray-500);
+
+  /* Selection */
+  --selection: var(--dga-primary-600);
+  --selection-foreground: oklch(1 0 0);
+}
+
+/* ============================================
+ * DARK MODE
+ * ============================================ */
+
+.theme-dga.dark .theme-container,
+.theme-dga.dark [data-radix-popper-content-wrapper],
+.theme-dga .dark .theme-container,
+.theme-dga .dark [data-radix-popper-content-wrapper] {
+  /* Backgrounds */
+  --background: var(--dga-gray-950);
+  --foreground: var(--dga-gray-50);
+
+  /* Card */
+  --card: var(--dga-gray-900);
+  --card-foreground: var(--dga-gray-50);
+
+  /* Popover */
+  --popover: var(--dga-gray-900);
+  --popover-foreground: var(--dga-gray-50);
+
+  /* Primary - Saudi Green (lighter for dark mode) */
+  --primary: var(--dga-primary-500);
+  --primary-foreground: var(--dga-primary-950);
+
+  /* Secondary - Gold */
+  --secondary: var(--dga-gold-900);
+  --secondary-foreground: var(--dga-gold-100);
+
+  /* Muted */
+  --muted: var(--dga-gray-800);
+  --muted-foreground: var(--dga-gray-400);
+
+  /* Accent - Lavender */
+  --accent: var(--dga-lavender-900);
+  --accent-foreground: var(--dga-lavender-100);
+
+  /* Destructive */
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.58 0.22 27);
+
+  /* Borders & Inputs */
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--dga-primary-500);
+
+  /* Charts - Green palette */
+  --chart-1: var(--dga-primary-400);
+  --chart-2: var(--dga-primary-500);
+  --chart-3: var(--dga-primary-600);
+  --chart-4: var(--dga-primary-700);
+  --chart-5: var(--dga-primary-800);
+
+  /* Sidebar */
+  --sidebar: var(--dga-gray-900);
+  --sidebar-foreground: var(--dga-gray-50);
+  --sidebar-primary: var(--dga-primary-500);
+  --sidebar-primary-foreground: var(--dga-primary-950);
+  --sidebar-accent: var(--dga-gray-800);
+  --sidebar-accent-foreground: var(--dga-gray-50);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: var(--dga-primary-600);
+
+  /* Surface */
+  --surface: var(--dga-gray-900);
+  --surface-foreground: var(--dga-gray-400);
+
+  /* Code */
+  --code: var(--dga-gray-900);
+  --code-foreground: var(--dga-gray-300);
+  --code-highlight: var(--dga-gray-800);
+  --code-number: var(--dga-gray-500);
+
+  /* Selection */
+  --selection: var(--dga-primary-500);
+  --selection-foreground: var(--dga-gray-950);
+}

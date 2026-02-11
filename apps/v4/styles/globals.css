@@ -2,6 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "./legacy-themes.css";
+@import "./dga-tokens.css";
+@import "./dga-theme.css";
 
 @import "../registry/styles/style-vega.css" layer(base);
 @import "../registry/styles/style-nova.css" layer(base);
@@ -30,6 +32,26 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  /* ============================================
+   * Override Tailwind defaults with DGA tokens
+   * ============================================ */
+
+  /* Shadows */
+  --shadow-sm: var(--dga-shadow-sm);
+  --shadow-md: var(--dga-shadow-md);
+  --shadow-lg: var(--dga-shadow-lg);
+  --shadow-xl: var(--dga-shadow-xl);
+  --shadow-2xl: var(--dga-shadow-2xl);
+
+  /* Transitions */
+  --ease-default: var(--dga-easing-default);
+  --ease-in: var(--dga-easing-in);
+  --ease-out: var(--dga-easing-out);
+
+  /* ============================================
+   * Colors - Map semantic vars to Tailwind
+   * ============================================ */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -70,6 +92,68 @@
   --color-code-number: var(--code-number);
   --color-selection: var(--selection);
   --color-selection-foreground: var(--selection-foreground);
+
+  /* ============================================
+   * Expose DGA palette colors to Tailwind
+   * Usage: bg-dga-primary-500, text-dga-gold-400, etc.
+   * ============================================ */
+  --color-dga-primary-50: var(--dga-primary-50);
+  --color-dga-primary-100: var(--dga-primary-100);
+  --color-dga-primary-200: var(--dga-primary-200);
+  --color-dga-primary-300: var(--dga-primary-300);
+  --color-dga-primary-400: var(--dga-primary-400);
+  --color-dga-primary-500: var(--dga-primary-500);
+  --color-dga-primary-600: var(--dga-primary-600);
+  --color-dga-primary-700: var(--dga-primary-700);
+  --color-dga-primary-800: var(--dga-primary-800);
+  --color-dga-primary-900: var(--dga-primary-900);
+  --color-dga-primary-950: var(--dga-primary-950);
+
+  --color-dga-gold-50: var(--dga-gold-50);
+  --color-dga-gold-100: var(--dga-gold-100);
+  --color-dga-gold-200: var(--dga-gold-200);
+  --color-dga-gold-300: var(--dga-gold-300);
+  --color-dga-gold-400: var(--dga-gold-400);
+  --color-dga-gold-500: var(--dga-gold-500);
+  --color-dga-gold-600: var(--dga-gold-600);
+  --color-dga-gold-700: var(--dga-gold-700);
+  --color-dga-gold-800: var(--dga-gold-800);
+  --color-dga-gold-900: var(--dga-gold-900);
+  --color-dga-gold-950: var(--dga-gold-950);
+
+  --color-dga-lavender-50: var(--dga-lavender-50);
+  --color-dga-lavender-100: var(--dga-lavender-100);
+  --color-dga-lavender-200: var(--dga-lavender-200);
+  --color-dga-lavender-300: var(--dga-lavender-300);
+  --color-dga-lavender-400: var(--dga-lavender-400);
+  --color-dga-lavender-500: var(--dga-lavender-500);
+  --color-dga-lavender-600: var(--dga-lavender-600);
+  --color-dga-lavender-700: var(--dga-lavender-700);
+  --color-dga-lavender-800: var(--dga-lavender-800);
+  --color-dga-lavender-900: var(--dga-lavender-900);
+  --color-dga-lavender-950: var(--dga-lavender-950);
+
+  --color-dga-gray-50: var(--dga-gray-50);
+  --color-dga-gray-100: var(--dga-gray-100);
+  --color-dga-gray-200: var(--dga-gray-200);
+  --color-dga-gray-300: var(--dga-gray-300);
+  --color-dga-gray-400: var(--dga-gray-400);
+  --color-dga-gray-500: var(--dga-gray-500);
+  --color-dga-gray-600: var(--dga-gray-600);
+  --color-dga-gray-700: var(--dga-gray-700);
+  --color-dga-gray-800: var(--dga-gray-800);
+  --color-dga-gray-900: var(--dga-gray-900);
+  --color-dga-gray-950: var(--dga-gray-950);
+
+  /* Semantic colors */
+  --color-dga-success: var(--dga-success);
+  --color-dga-success-light: var(--dga-success-light);
+  --color-dga-warning: var(--dga-warning);
+  --color-dga-warning-light: var(--dga-warning-light);
+  --color-dga-error: var(--dga-error);
+  --color-dga-error-light: var(--dga-error-light);
+  --color-dga-info: var(--dga-info);
+  --color-dga-info-light: var(--dga-info-light);
 }
 
 :root {
