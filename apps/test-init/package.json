@@ -7,8 +7,8 @@
     "dev": "vite --port 3333",
     "build": "vite build",
     "preview": "vite preview",
-    "test:init": "npx dga-ui init --base-color dga --yes",
-    "test:add": "npx dga-ui add button --yes"
+    "test:init": "npx dga-ui-kit init --base-color dga --yes",
+    "test:add": "npx dga-ui-kit add button --yes"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
