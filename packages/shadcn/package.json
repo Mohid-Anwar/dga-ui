@@ -1,14 +1,14 @@
 {
-  "name": "@mohid-anwar/dga-ui",
+  "name": "dga-ui-kit",
   "version": "0.0.1",
-  "description": "Add components to your apps.",
+  "description": "The dga-ui-kit package provides a collection of reusable UI components that can be easily integrated into your applications. It includes a wide range of components such as buttons, forms, modals, and more, all designed to be customizable and responsive. With dga-ui-kit, you can quickly build consistent and visually appealing user interfaces while saving development time. Moreover, it is also utilizes shadcn CLI, which allows you to easily generate and manage your own component libraries based on the shadcn design system.",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "author": {
     "name": "Mohid Anwar",
-    "url": "https://twitter.com/mohid_anwar"
+    "url": "https://github.com/mohid_anwar"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "ui",
     "tailwind",
     "radix-ui",
-    "shadcn"
+    "dga"
   ],
   "type": "module",
   "exports": {
